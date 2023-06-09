@@ -37,13 +37,13 @@
 
 				<h3>è possibile ripetere caratteri?</h3>
 				<div class="form-check">
-					<input class="form-check-input" type="radio" name="repetition" id="radio-si" <?= $repetition == 0 ?: 'checked' ?> value='1'>
+					<input class="form-check-input" type="radio" name="repetition" id="radio-si" <?= $repetition == 1 ? 'checked' : '' ?> value='1'>
 					<label class="form-check-label" for="radio-si">
 						Si
 					</label>
 				</div>
 				<div class="form-check">
-					<input class="form-check-input" type="radio" name="repetition" id="radio-no" <?= $repetition == 1 ?: 'checked' ?> value='0'>
+					<input class="form-check-input" type="radio" name="repetition" id="radio-no" <?= $repetition == 0 ? 'checked' : '' ?> value='0'>
 					<label class="form-check-label" for="radio-no">
 						No
 					</label>
